@@ -12996,8 +12996,10 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -13008,49 +13010,12 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-    </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
     </style>
 
 
@@ -13114,9 +13079,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%%capture</span>
-<span class="c1">#%%shell</span>
-<span class="c1">#jupyter nbconvert --to html /content/Final_Tutorial.ipynb</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">capture</span>
+%%shell
+jupyter nbconvert --to html /content/Final_Tutorial.ipynb
 </pre></div>
 
     </div>
@@ -13135,7 +13100,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="This-is-the-Data-Science-final-project-for-Ila-Keshishian-and-Bennett-Kahn.">This is the Data Science final project for <strong>Ila Keshishian</strong> and <strong>Bennett Kahn</strong>.<a class="anchor-link" href="#This-is-the-Data-Science-final-project-for-Ila-Keshishian-and-Bennett-Kahn.">&#182;</a></h2><p>Our project website can be found at <a href="https://thegenghiskahn.github.io/dataScienceFinalProject/">this link</a>.</p>
+<h2 id="This-is-the-Data-Science-final-project-for-Ila-Keshishian-and-Bennett-Kahn.">This is the Data Science final project for <strong>Ila Keshishian</strong> and <strong>Bennett Kahn</strong>.<a class="anchor-link" href="#This-is-the-Data-Science-final-project-for-Ila-Keshishian-and-Bennett-Kahn.">&#182;</a></h2><p>Our project website can be found at <a href="https://bennettkahn.github.io/dataScienceFinalProject/">this link</a>.</p>
 
 </div>
 </div>
@@ -13177,7 +13142,7 @@ div#notebook {
 <li>zoom/in-person</li>
 <li>number of court appearances </li>
 </ul>
-<p>As discussed in Part 1a-ii, for Milestone Two we are only analyzing dockets with magistrate numbers 554,000 to 556,000. We have compiled the scraped dockets into two csv files (also discussed in Part 1a-ii), which can be downloaded at <a href="https://drive.google.com/drive/folders/1XSGpuHbEcY7Czv9-_swEC28WKWNAIjEs?usp=sharing">this link</a>.</p>
+<p>As discussed in Part 1a-ii, for Milestone Two we are only analyzing dockets with magistrate numbers 554,000 to 563,500. We have compiled the scraped dockets into two csv files (also discussed in Part 1a-ii), which can be downloaded at <a href="https://drive.google.com/drive/folders/1XSGpuHbEcY7Czv9-_swEC28WKWNAIjEs?usp=sharing">this link</a>.</p>
 
 </div>
 </div>
@@ -13285,7 +13250,7 @@ hearings on bond price (versus in person hearings)? If there is a noticeable dif
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importing tools used for web scraping and data analysis</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">from</span> <span class="nn">bs4</span> <span class="k">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">lxml</span> <span class="k">as</span> <span class="nn">l</span>
@@ -13295,7 +13260,7 @@ hearings on bond price (versus in person hearings)? If there is a noticeable dif
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">logging</span>
 <span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">from</span> <span class="nn">ethnicolr</span> <span class="k">import</span> <span class="n">census_ln</span><span class="p">,</span> <span class="n">pred_census_ln</span><span class="p">,</span> <span class="n">pred_wiki_name</span>
+<span class="kn">from</span> <span class="nn">ethnicolr</span> <span class="kn">import</span> <span class="n">census_ln</span><span class="p">,</span> <span class="n">pred_census_ln</span><span class="p">,</span> <span class="n">pred_wiki_name</span>
 <span class="c1">#from google.colab import files</span>
 <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span><span class="p">(</span><span class="s1">&#39;catch_all&#39;</span><span class="p">)</span>
 </pre></div>
@@ -13410,7 +13375,7 @@ hearings on bond price (versus in person hearings)? If there is a noticeable dif
   <span class="n">dates</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
   <span class="n">date_starts</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
   <span class="c1"># regex for dates proceeding a new line; loop over all</span>
-  <span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="s1">r&#39;\n(\d</span><span class="si">{2}</span><span class="s1">\/\d</span><span class="si">{2}</span><span class="s1">\/\d</span><span class="si">{4}</span><span class="s1">)\s{2,}&#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\n(\d</span><span class="si">{2}</span><span class="s1">\/\d</span><span class="si">{2}</span><span class="s1">\/\d</span><span class="si">{4}</span><span class="s1">)\s{2,}&#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
     <span class="n">dates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
     <span class="n">date_starts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">start</span><span class="p">())</span>
 
@@ -13424,12 +13389,12 @@ hearings on bond price (versus in person hearings)? If there is a noticeable dif
   <span class="n">texts</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
   <span class="n">judges</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
   <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">entities</span><span class="p">:</span>
-    <span class="n">reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">r&#39;\n\s+[A-Z]&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+    <span class="n">reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\n\s+[A-Z]&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
 
     <span class="n">text</span> <span class="o">=</span> <span class="n">e</span><span class="p">[</span><span class="n">reg</span><span class="o">.</span><span class="n">start</span><span class="p">():]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="n">texts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 
-    <span class="n">reg1</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">r&#39;\s+([A-Z]+)&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+    <span class="n">reg1</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\s+([A-Z]+)&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
     <span class="n">judge</span> <span class="o">=</span> <span class="n">reg1</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">judges</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">judge</span><span class="p">)</span>
   
@@ -13448,7 +13413,7 @@ hearings on bond price (versus in person hearings)? If there is a noticeable dif
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_mag</span><span class="p">(</span><span class="n">soup</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;WORKING REGEX TO GET MAG NUMBER&quot;&quot;&quot;</span>
-    <span class="n">mag_num</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">r&#39;MAG#: (\d</span><span class="si">{6}</span><span class="s1">)&#39;</span><span class="p">,</span> <span class="n">soup</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">mag_num</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;MAG#: (\d</span><span class="si">{6}</span><span class="s1">)&#39;</span><span class="p">,</span> <span class="n">soup</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">mag_num</span>
 </pre></div>
 
@@ -13603,7 +13568,7 @@ hearings on bond price (versus in person hearings)? If there is a noticeable dif
             <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">base_url</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
             <span class="n">root</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span> <span class="n">r</span><span class="o">.</span><span class="n">content</span> <span class="p">)</span>
             <span class="n">soup</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;pre&#39;</span><span class="p">))</span>
-            <span class="n">soup</span><span class="o">.</span><span class="n">__repr__</span><span class="p">()</span>
+            <span class="n">soup</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span>
             <span class="n">text</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
             
             <span class="n">mag_num</span> <span class="o">=</span> <span class="n">get_mag</span><span class="p">(</span><span class="n">soup</span><span class="p">)</span>
@@ -15929,7 +15894,7 @@ Name: Charge, dtype: int64</pre>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">charge</span><span class="p">,</span> <span class="n">grp</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">race_charge</span><span class="p">[</span>
     <span class="p">(</span><span class="n">race_charge</span><span class="p">[</span><span class="s2">&quot;Charge&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">wanted_charges_</span><span class="p">))</span><span class="o">&amp;</span> <span class="p">(</span><span class="n">race_charge</span><span class="p">[</span><span class="s2">&quot;Bond&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Charge&quot;</span><span class="p">])):</span>
     <span class="n">grp</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span> <span class="o">=</span> <span class="s2">&quot;Mag Num&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span> <span class="s2">&quot;Mag Section&quot;</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="s2">&quot;Bond&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">box</span><span class="p">(</span>
-        <span class="n">ax</span> <span class="o">=</span> <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="n">f</span><span class="s2">&quot;Distribution of</span><span class="se">\n</span><span class="s2"> </span><span class="si">{charge}</span><span class="se">\n</span><span class="s2"> in Sections of Mag Court&quot;</span><span class="p">)</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Distribution of</span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">charge</span><span class="si">}</span><span class="se">\n</span><span class="s2"> in Sections of Mag Court&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -16236,10 +16201,10 @@ Name: Charge, dtype: int64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">itertools</span> <span class="k">as</span> <span class="nn">it</span>
-<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="k">import</span> <span class="n">KNeighborsRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsRegressor</span>
 
 
-<span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="k">import</span> <span class="n">DictVectorizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="kn">import</span> <span class="n">DictVectorizer</span>
 <span class="c1"># Dummy encoding</span>
 <span class="n">vec</span> <span class="o">=</span> <span class="n">DictVectorizer</span><span class="p">(</span><span class="n">sparse</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">vec</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_dict</span><span class="p">)</span>
@@ -16247,7 +16212,7 @@ Name: Charge, dtype: int64</pre>
 
 
 <span class="c1"># Standardization</span>
-<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
 <span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
 <span class="n">scaler</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
 
